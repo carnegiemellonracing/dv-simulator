@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="orange_striped_cone">
+  <joint name="joint_root-root_Camera_Camera" type="fixed">
+    <origin xyz="7.3588915 -6.925791 4.958309 " rpy="1.109319 0. 0.8149282"/>
+    <parent link="root"/>
+    <child link="root_Camera_Camera"/>
+  </joint>
+  <link name="root">
+    <visual>
+      <origin xyz="0. 0. 0." rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/Cube_001.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0. 0. 0.01" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/root_Cylinder_Cylinder.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0. 0. 0.24" rpy="0. 0. 0."/>
+      <geometry>
+        <mesh filename="meshes/Mesh.obj" scale="1. 1. 1."/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="root_Camera_Camera"/>
+</robot>
